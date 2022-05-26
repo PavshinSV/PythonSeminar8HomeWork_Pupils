@@ -1,6 +1,21 @@
 import db_operations as db
+import ui
+
+
 def run():
-    data = db.get_base()
-    print(data[0])
-    print(data[1])
-    print(data[2])
+    data = db.get_base()  # data[0] - ученики, data[1] - адреса, data[2] - место в классе
+    print(data)
+    menu = ['Просмотр базы;Добавление сведений;Удаление сведений;Поиск;Экспорт Базы']
+    choice = ui.get_choice(menu[0])
+    if choice == 1:
+        ui.get_look(data)
+    elif choice == 2:
+        db.get_new_data()
+    elif choice == 3:
+        db.get_data_remove()
+    elif choice ==4:
+        db.get_find()
+    elif choice ==5:
+        db
+    else:
+        print('Ошибка ввода - сообщите разработчику')
