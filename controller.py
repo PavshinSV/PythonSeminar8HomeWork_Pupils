@@ -12,7 +12,7 @@ def run():
     elif choice == 2:
         db.get_new_data(data)
     elif choice == 3:
-        db.get_data_remove()
+        db.get_data_remove(data)
     elif choice ==4:
         db.get_find(data)
     elif choice ==5:
