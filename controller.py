@@ -16,6 +16,6 @@ def run():
     elif choice ==4:
         db.get_find(data)
     elif choice ==5:
-        db
+        db.get_export(data)
     else:
         print('Ошибка ввода - сообщите разработчику')
